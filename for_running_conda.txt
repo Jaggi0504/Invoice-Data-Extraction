@@ -1,0 +1,15 @@
+source ~/anaconda3/etc/profile.d/conda.sh
+
+
+
+# mmdetection install
+conda create -n open-mmlab python=3.7 -y
+conda activate open-mmlab
+
+# install latest pytorch prebuilt with the default prebuilt CUDA version (usually the latest)
+conda install -c pytorch pytorch torchvision -y
+git clone https://github.com/open-mmlab/mmdetection.git
+cd mmdetection
+pip install -r requirements/build.txt
+pip install "git+https://github.com/open-mmlab/cocoapi.git#subdirectory=pycocotools"
+pip install -v -e .

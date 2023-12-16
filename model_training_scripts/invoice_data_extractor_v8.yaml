@@ -1,0 +1,6 @@
+path: ../data_yolo_final/
+train: 'images/train'
+val: 'images/val'
+ 
+# class names
+names: ['contact_person_name','currency','gst_no','invoice_date','invoice_number','order_date','order_no','order_ref_no','pan_no','receiver_address','receiver_name','seller_address','seller_name','table','total_amount','vat_no']
